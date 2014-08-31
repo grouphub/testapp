@@ -6,8 +6,12 @@ gydeServices.factory('UserService', ['$http',
   function($http) {
     return {
       send: function(user) {
-      	console.log("blah")
-        return $http.post('/priorities', { priority: "Save" });
+        console.log("blah")
+        return $http.post('/priorities', {
+          priority: {
+            priority: "Save"
+          }
+        });
       }
     }
   }
