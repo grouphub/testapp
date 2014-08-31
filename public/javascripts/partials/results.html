@@ -1,0 +1,75 @@
+<section class="results">
+  <div class="container">
+    <div class="loading-indicator" ng-show="loading">
+      <img src="/images/spinner.gif">
+      <h2>Loading results&hellip;</h2>
+    </div>
+
+    <div class="loaded-results" ng-hide="loading">
+      <h1>Results</h1>
+
+      <!-- Plans Accordion -->
+      <div class="panel-group" id="plans-accordion">
+        <div class="panel panel-default" ng-repeat="plan in results.plans">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#plans-accordion" href="#plan-collapse-{{$index}}" target="_self">
+                {{plan.name}}
+              </a>
+            </h4>
+          </div>
+
+          <div id="plan-collapse-{{$index}}" class="panel-collapse collapse {{$first ? 'in' : ''}}">
+            <div class="panel-body">
+
+              <!-- Plan Sub-Accordion -->
+              <div class="panel-group" id="plan-accordion-{{plan.id}}">
+                <!-- Detail Panel -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#plan-accordion-{{plan.id}}" href="#details-collapse-{{plan.id}}" target="_self">
+                        Details
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div id="details-collapse-{{plan.id}}" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <pre>Total Monthly Premium: {{plan.details.total_monthly_premium}}</pre>
+                      <pre>Premium Assistance: {{plan.details.premium_assistance}}</pre>
+                      <pre>Total: {{plan.details.total}}</pre>
+                      <pre>Total Savings: {{plan.details.total_saving}}</pre>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Benefits Panel -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#plan-accordion-{{plan.id}}" href="#benefits-collapse-{{plan.id}}" target="_self">
+                        Benefits
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div id="benefits-collapse-{{plan.id}}" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <pre>{{plan.benefits}}</pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results fom server for debugging purposes -->
+      <pre>{{results}}</pre>
+    </div>
+  </div>
+</section>
+

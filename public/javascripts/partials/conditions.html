@@ -1,0 +1,42 @@
+<section class="conditions">
+  <div class="container">
+    <h1>Do you have a specific condition?</h1>
+
+    <p>If you have a chronic or serious illness then access to quality care is critical to your health and wellbeing.</p>
+    <p>Select what conditions you are dealing with, and we will guide you to options for managing your health and budget.</p>
+
+    <form role="form">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="user.conditions.breastCancer"> Breast Cancer
+        </label>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="user.conditions.lungCancer"> Lung Cancer
+        </label>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="user.conditions.prostateCancer"> Prostate Cancer
+        </label>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="user.conditions.diabetes"> Diabetes
+        </label>
+      </div>
+
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="user.conditions.otherCancer"> Other Cancer
+        </label>
+      </div>
+
+      <a href="/details" type="button" class="btn btn-default">Next</a>
+    </form>
+  </div>
+</section>

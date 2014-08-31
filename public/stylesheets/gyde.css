@@ -1,0 +1,58 @@
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar a {
+  color: #4ab848;
+}
+
+.navbar .navbar-toggle {
+  border: 1px solid #4ab848;
+}
+
+.navbar .icon-bar {
+  background-color: #4ab848;
+}
+
+.masthead {
+  background-image: linear-gradient(to bottom, #888888 0, #666666 100%);
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-shadow: 0 1px #333333;
+  margin-bottom: 10px;
+}
+
+.masthead .btn {
+  background: none;
+  color: white;
+  text-shadow: 0 1px #333333;
+}
+
+.masthead .btn:hover {
+  background: none;
+  color: #cccccc;
+  text-shadow: 0 1px #333333;
+}
+
+.form-group label {
+  display: block;
+}
+
+footer {
+  border-top: 1px solid #cccccc;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.debug {
+  margin-top: 20px;
+}
+
+.loading-indicator {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+

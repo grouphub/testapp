@@ -1,0 +1,30 @@
+{
+  "plans": [
+    {
+      "id": 1,
+      "name": "Anthem",
+      "details": {
+        "total_monthly_premium": "600.00",
+        "premium_assistance": "0",
+        "total": "600.00",
+        "total_saving": "20000.00"
+      },
+      "benefits": {
+
+      }
+    },
+    {
+      "id": 2,
+      "name": "BlueShield",
+      "details": {
+        "total_monthly_premium": "600.00",
+        "premium_assistance": "0",
+        "total": "600.00",
+        "total_saving": "20000.00"
+      },
+      "benefits": {
+
+      }
+    }
+  ]
+}
