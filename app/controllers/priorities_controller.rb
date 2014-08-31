@@ -1,6 +1,8 @@
 class PrioritiesController < ApplicationController
   before_action :set_priority, only: [:show, :edit, :update, :destroy]
 
+  protect_from_forgery :except => :create
+
   # GET /priorities
   # GET /priorities.json
   def index
